@@ -17,7 +17,7 @@ namespace dotnet_sesion_2
             Console.WriteLine("Ingrese su velocidad: ");
             double velocidad=Double.Parse(Console.ReadLine());              
             double tiempo=distancia/velocidad;
-            Console.WriteLine("Estimado {0}, usted llegara de {1}, a {2},en {3}, segundos",nombre, origen,destino,tiempo);
+            Console.WriteLine("Estimado {0}, usted llegara de {1}, a {2},en {3}, segundos, gracias",nombre, origen,destino,tiempo);
         }
     }
 }
