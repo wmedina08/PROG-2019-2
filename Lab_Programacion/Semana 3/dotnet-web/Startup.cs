@@ -37,7 +37,7 @@ namespace dotnet_web
 
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=dex}/{id?}"
+                    template: "{controller=Home}/{action=Index}/{id?}"
                 );
             });
         }
