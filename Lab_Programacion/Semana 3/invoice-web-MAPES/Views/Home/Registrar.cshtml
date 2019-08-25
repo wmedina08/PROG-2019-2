@@ -1,0 +1,18 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model invoice_web_MAPES.models.invoice
+
+<!DOCTYPE html>
+<html>
+    <title>Reporte</title>
+<body>
+    <h1>invoice:
+        @Html.DisplayTextFor(model => model.random)
+    </h1><br>
+    <h1>Cliente 
+        @Html.DisplayTextFor(model => model.Age)
+    </h1><br>
+    <h1>Subtotal 
+        @Html.DisplayTextFor(model => model.SubTotal)
+    </h1><br>
+</body>
+</html>
