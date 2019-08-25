@@ -1,0 +1,27 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model invoice_web_.models.Invoice
+
+<!DOCTYPE html>
+<html>
+    <title>Invoice</title>
+<body>
+    <h1>Invoice</h1>
+    <div>
+        <form asp-asp-controller="home" asp-action="calculo">
+            <label>cliente</label>
+            <input asp-for="cliente"/><br/>
+            <label>Estado civil</label>
+            <select asp-for="producto">
+                <option value="100">Producto 1</option>
+                <option value="50">Producto 2</option>
+                <option value="80">Producto 3</option>
+            </select>
+            <label>Cantidad</label>
+            <input asp-for="cantidad"/><br/>
+            <label>Fecha</label>
+            <input asp-for="fecha"/><br/>
+            <input type="submit" value="Registrar"/>
+        </form>
+    </div>
+</body>
+</html>
