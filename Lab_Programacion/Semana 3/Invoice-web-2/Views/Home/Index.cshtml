@@ -1,12 +1,7 @@
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@model invoice_web_.models.Invoice
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Invoice_web_2.Models.Invoice
 
-<!DOCTYPE html>
-<html>
-    <title>Invoice</title>
-<body>
-    <h1>Invoice</h1>
-    <div>
+<div class="text-center">
         <form asp-controller="Home" asp-action="calculo">
 
             <label>cliente</label>
@@ -23,7 +18,4 @@
             <input asp-for="fecha"/><br/>
             <input type="submit" value="Registrar"/>
         </form>
-    </div>
-</body>
-</html>
-
+</div>

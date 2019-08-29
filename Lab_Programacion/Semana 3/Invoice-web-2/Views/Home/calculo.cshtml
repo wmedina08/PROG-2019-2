@@ -1,0 +1,17 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Invoice_web_2.Models.Invoice
+<!DOCTYPE html>
+<html>
+    <title>Calculo</title>
+<body>
+    <h1>REPORTE: </h1>
+    <h1>invoice #:@Html.DisplayTextFor(model => model.Num)
+    </h1><br>
+    <h1> Cliente: @Html.DisplayTextFor(model => model.cliente)
+    </h1><br>
+    <h1>Subtotal: @Html.DisplayTextFor(model => model.SubTotal)
+    </h1><br>
+    <h1>Total: @Html.DisplayTextFor(model => model.Total)
+    </h1>
+</body>
+</html>
