@@ -15,7 +15,7 @@ namespace Invoice_web_2.Controllers
             return View();
         }
 
-        // POST: Home/RegistrarFan
+       
         [HttpPost]
         public IActionResult calculo(Invoice invoice)
         {
@@ -25,7 +25,7 @@ namespace Invoice_web_2.Controllers
             int num = random.Next();
             invoice.Num = num;
 
-            int subt = invoice.producto * invoice.cantidad; ;
+            int subt = invoice.producto * invoice.cantidad; 
             invoice.SubTotal = subt;
 
             double total = subt * 1.18;
