@@ -5,6 +5,7 @@ namespace Invoice_web_2.Models
 {
     public class Invoice{
 
+        public int ID { get; set;}
         public String cliente {get; set;}
         public int producto {get; set;}
         public int cantidad {get; set;}

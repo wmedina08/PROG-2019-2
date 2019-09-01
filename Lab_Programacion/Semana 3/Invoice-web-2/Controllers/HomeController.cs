@@ -8,7 +8,12 @@ namespace Invoice_web_2.Controllers
     public class HomeController : Controller
     {
 
+        private readonly DatabaseContext _context;
 
+        public HomeController(DatabaseContext context)
+        {
+            _context = context;
+        }
         public IActionResult Index()
         {
             Console.WriteLine("Index");
@@ -30,7 +35,8 @@ namespace Invoice_web_2.Controllers
 
             double total = subt * 1.18;
             invoice.Total = total;
-
+            _context.Add(invoice);
+            _context.SaveChanges();
             return View(invoice);
         }
     }
