@@ -22,8 +22,8 @@ namespace dotnet_web
                   
                     options.UseNpgsql(
             "Host=ec2-54-83-9-36.compute-1.amazonaws.com;" +
-            "Database=d76dvfemdvq3b4;Username=tthuzzuumpwkry;"+
-            "Password=2b01c50438365ab95cc5496c0c580a594865bb02ede03ace69e9d263081aa2f0;"+
+            "Database=d1tu8c5ppao6f2;Username=yzmxpthfwuyfnj;"+
+            "Password=8e7debf56bf9689a87ba545f57d711b4f8b8f8969d831c3796532443d053aa57;"+
             "Port=5432;SSL Mode=Require;Trust Server Certificate=true")
                   ); 
         }
