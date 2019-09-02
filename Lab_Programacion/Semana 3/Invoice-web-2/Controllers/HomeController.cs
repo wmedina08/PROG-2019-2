@@ -33,7 +33,7 @@ namespace Invoice_web_2.Controllers
             int subt = invoice.producto * invoice.cantidad; 
             invoice.SubTotal = subt;
 
-            double total = subt * 1.18;
+            double total = Math.Round(subt * 1.18, 2);
             invoice.Total = total;
             _context.Add(invoice);
             _context.SaveChanges();
