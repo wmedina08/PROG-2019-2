@@ -3,15 +3,24 @@
 <html>
     <title>Calculo</title>
 <body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Invoice #: @Html.DisplayTextFor(model => model.Num)           
+                </li>
+                <li class="list-group-item">Cliente: @Html.DisplayTextFor(model => model.cliente)
+                </li>
+                <li class="list-group-item">Cantidad @Html.DisplayTextFor(model => model.SubTotal)
+                </li>
+                <li class="list-group-item">Total: @Html.DisplayTextFor(model => model.Total)
+                </li>
+                <br>
+                <a href="http://localhost:5000/"><button type="button" class="btn btn-warning">Regresar</button></a> 
+            </ul>            
+        </div>
+        
+    </div>
 
-    <h1>REPORTE: </h1>
-    <h1>invoice #:@Html.DisplayTextFor(model => model.Num)
-    </h1><br>
-    <h1> Cliente: @Html.DisplayTextFor(model => model.cliente)
-    </h1><br>
-    <h1>Subtotal: @Html.DisplayTextFor(model => model.SubTotal)
-    </h1><br>
-    <h1>Total: @Html.DisplayTextFor(model => model.Total)
-    </h1>
+
 </body>
 </html>
