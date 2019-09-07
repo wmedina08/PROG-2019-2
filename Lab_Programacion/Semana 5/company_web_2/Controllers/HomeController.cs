@@ -1,8 +1,8 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
-using company_web.models;
+using company_web_2.models;
 
-namespace company_web.controllers
+namespace company_web_2.controllers
 {
     public class HomeController:Controller{
 
@@ -11,23 +11,23 @@ namespace company_web.controllers
             return View();
 
         }
+       
         public IActionResult calcular(Producto product){
             Console.WriteLine("calcular");
             
-            double precio = double.Parse(product.price);
-            double precioT;
+            Double precioT;
 
             if((product.tProduccion)=="0.30"){
                 if((product.categoria)=="0.05"){
-                    precioT=precio*1.35;
+                    precioT=product.Price*1.35;
                 }else{
-                    precioT=precio*1.33;
+                    precioT=product.Price*1.33;
                 }
             }else{
                 if((product.categoria)=="0.05"){
-                    precioT=precio*1.15;
+                    precioT=product.Price*1.15;
                 }else{
-                    precioT=precio*1.13;
+                    precioT=product.Price*1.13;
                 }
             }
 

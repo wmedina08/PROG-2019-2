@@ -6,10 +6,10 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using company_web.models;
+using company_web_2.models;
 using Microsoft.EntityFrameworkCore;
 
-namespace company_web
+namespace company_web_2
 {
     public class Startup
     {

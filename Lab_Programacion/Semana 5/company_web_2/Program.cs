@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace company_web
+namespace company_web_2
 {
     public class Program
     {
@@ -22,4 +22,3 @@ namespace company_web
                 .UseStartup<Startup>();
     }
 }
-
