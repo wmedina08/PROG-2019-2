@@ -1,0 +1,23 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model company_web.model.Producto
+
+<html>
+<head>
+    <title>Compañia</title>
+</head>
+<body>
+    <form asp-asp-controller="Home" asp-action="calcular">
+        <label>Producto</label>
+        <input type="text" asp-for="product"><br>
+        <option asp-for="categoria">
+            <select value="0.05">Camioneta</select>
+            <select value="0.03">Automovil</select>
+        </option>
+        <input type="radio" asp-for="tProduccion" value="nacional">Nacional
+        <input type="radio" asp-for="tProduccion" value="extrangero">Extrangera<br>
+        <label>Precio</label>
+        <input type="text" asp-for="precio"><br>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

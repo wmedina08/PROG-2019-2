@@ -1,0 +1,15 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model company_web.models.producto
+<!DOCTYPE html>
+<html>
+    <title>Dora App</title>
+<body>
+    <h1>La respuesta 
+        @Html.DisplayTextFor(model => model.product)
+        @Html.DisplayTextFor(model => model.categoria)
+        @Html.DisplayTextFor(model => model.product)
+        @Html.DisplayTextFor(model => model.precio)
+        @Html.DisplayTextFor(model => model.precioImp)
+    </h1><br>
+</body>
+</html>
