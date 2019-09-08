@@ -6,11 +6,14 @@
     <div class="container">
         <div class="row justify-content-center">
             <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-warning">Reporte:</li>
                 <li class="list-group-item">Invoice #: @Html.DisplayTextFor(model => model.Num)           
                 </li>
                 <li class="list-group-item">Cliente: @Html.DisplayTextFor(model => model.cliente)
                 </li>
-                <li class="list-group-item">Cantidad @Html.DisplayTextFor(model => model.SubTotal)
+                <li class="list-group-item">Cantidad: @Html.DisplayTextFor(model => model.cantidad)
+                </li>
+                <li class="list-group-item">SubTotal: @Html.DisplayTextFor(model => model.SubTotal)
                 </li>
                 <li class="list-group-item">Total: @Html.DisplayTextFor(model => model.Total)
                 </li>
