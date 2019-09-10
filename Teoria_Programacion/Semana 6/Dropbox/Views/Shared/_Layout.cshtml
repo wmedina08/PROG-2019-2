@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .menu {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .menu li {
+            display: inline-block;
+            padding: 0 5px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border-bottom">
+        <nav class="container py-3">
+            <div class="row">
+                <div class="col-4">
+                    <img src="~/images/prueba.png" alt="">
+                </div>
+                <div class="col-4 text-center">
+                    <a asp-area="" asp-controller="Informacion" asp-action="info"><img src="~/images/logo.png" alt=""></a>
+                </div>
+                <div class="col-4 text-right">
+                    <ul class="menu">
+                        <li>Descarga la aplicación</li>
+                        <li>Inicia sesión</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2019 - Dropbox</p>
+        </footer>
+    </div>
+
+</body>
+</html>
