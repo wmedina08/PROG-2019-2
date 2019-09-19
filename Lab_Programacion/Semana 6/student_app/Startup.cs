@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using company_web_2.models;
+using student_app.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace company_web_2

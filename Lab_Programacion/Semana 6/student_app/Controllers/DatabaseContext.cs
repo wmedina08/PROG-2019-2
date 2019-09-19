@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using student_app.Models;
 
 namespace student_app.models
 {
