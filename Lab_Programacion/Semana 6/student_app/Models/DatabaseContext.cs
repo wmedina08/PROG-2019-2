@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using student_app.Models;
 
-namespace student_app.models
+namespace student_app.Models
 {
     public class DatabaseContext : DbContext
     {
@@ -12,6 +12,7 @@ namespace student_app.models
         }
         
         public DbSet<student> students { get; set; }
+        
 
     }
 }
