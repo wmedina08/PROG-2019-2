@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using student_app.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace company_web
+namespace student_app
 {
     public class Startup
     {
