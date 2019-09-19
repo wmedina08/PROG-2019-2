@@ -6,10 +6,10 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using student_app.Models;
+using student_app.models;
 using Microsoft.EntityFrameworkCore;
 
-namespace company_web_2
+namespace company_web
 {
     public class Startup
     {
@@ -18,6 +18,14 @@ namespace company_web_2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddDbContext<DatabaseContext>(options =>
+                  
+                    options.UseNpgsql(
+            "Host=ec2-54-83-9-36.compute-1.amazonaws.com;" +
+            "Database=d1tu8c5ppao6f2;Username=yzmxpthfwuyfnj;"+
+            "Password=8e7debf56bf9689a87ba545f57d711b4f8b8f8969d831c3796532443d053aa57;"+
+            "Port=5432;SSL Mode=Require;Trust Server Certificate=true")
+                  );            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
