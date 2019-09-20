@@ -24,23 +24,20 @@ namespace student_app.Controllers
             {
                 return NotFound();
             }
-
             var student = _context.students
                 .SingleOrDefault(m => m.id == id);
             if (student == null)
             {
                 return NotFound();
             }
-
             return View(student);
         }
+        
         [HttpPost]
         public IActionResult Registro(student student){
             Console.WriteLine("Registro");
-
             int edad = DateTime.Now.Year - student.birth.Year;
-            student.edad=edad;
-            
+            student.edad=edad;        
             int creditos=0;
             int total=0;
             switch (student.curso){
@@ -56,10 +53,11 @@ namespace student_app.Controllers
             }
             student.credito=creditos;
             student.total=total;
-            
+
+
+
             _context.Add(student);
             _context.SaveChanges();
-
             return View(student);
         }
     }
